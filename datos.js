@@ -7,7 +7,7 @@ var datos = '',
 
 mediaqueryList.addListener(function(EventoMediaQueryList){
 });
-
+//Obtengo info de la api
     $.ajax({
         url: 'https://randomuser.me/api/',
         dataType: 'json',
@@ -26,7 +26,7 @@ function displayInfoContacto() {  //Muestra el div con la informacion del contac
     //Verifica el tamaño de la pantalla para modificar la posicion del elemento
     if(window.matchMedia("(max-width: 768px").matches){
         document.getElementById('contacto').style.position = "fixed";
-        console.log("menos de 768");
+        //console.log("menos de 768");
     }else{
         document.getElementById('contacto').style.position = "static";
     }
