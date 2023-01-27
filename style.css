@@ -1,0 +1,173 @@
+html,body, .container-fluid{
+    height: 95%;
+}
+
+.row{
+    height: 100%;
+}
+
+body{
+    background-image: url("/img/back_img2.jpg");
+    /*background-color: #dad7cd ;*/
+    /*font-family: 'Roboto Slab', serif;*/
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 992px){
+    .container-fluid{
+        max-width: 95% !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .colFoto{
+        height: 100%;
+        width: 40%;
+    }
+}
+
+/*
+Media Queries for mobile devices
+*/
+
+@media screen and (max-width: 768px){
+    .colFoto{
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .colInfo{
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .container-fluid{
+        height: auto;
+    }
+
+    #botonContacto{
+        margin-bottom: 5%;
+    }
+
+    #contacto{
+        background-color: #4f2c4d;
+        right: 2%;
+        width: 95%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .tab-content > div > ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    .tab-content{
+        margin: 5%;
+    }
+}
+
+/***************************************/
+
+#divContacto{
+    position: relative;
+}
+
+.container-fluid{
+    /*background-color: #a3b18a;*/
+    background-color: #7d677e;
+    max-width: 942px;
+    margin-top: 5%;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: #070b0977;
+    border-width: 1px;
+}
+
+#foto, #nombreCompleto{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.colFoto{
+    /*background-color: #344e41;*/
+    background-color: #4f2c4d;
+    /*
+    height: 100%;
+    width: 40%;
+    */
+    margin-left: 3%;
+    overflow: auto;
+    color: #ffffff;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    display: block;
+    margin-bottom: 5% !important;
+}
+
+.glyphicon{
+    display: block;
+    line-height: 1.5em;
+}
+
+.glyphicon > span{
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+.colInfo{
+    color: black;
+    margin-left: 3%;
+}
+
+.nav > li{
+    width: 32%;
+    text-align: center;
+}
+
+li.active>a{
+    background-color: #353D4F !important;
+}
+
+a{
+    color: #353D4F;
+}
+
+.btn-info{
+    background-color: #353D4F !important;
+    border-color: #070B09 !important;
+}
+
+#nombreCompleto > h1{
+    text-transform: uppercase;
+    font-weight: bold !important;
+}
+
+h2{
+    margin-top: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+}
+
+#botonContacto{
+    width: 100%;
+}
+
+#botonContacto>span{
+    display: inline-block;
+    margin-left: 5% ;
+}
+
+#contacto{
+    border-width: 5px !important;
+    border-color: #070B09 !important;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    z-index: 9;
+    position: static;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favico/favicon-16x16.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="datos.js"></script>
+    <title>CV</title>
+</head>
+<body>
+    <div class="container-fluid"> 
+
+        <div class="row">
+            <div class="col-sm-6 col-xs-6 text-center colFoto">
+                <div id="foto"></div>
+                
+                <div id="datos"></div>
+
+                <div id="divContacto">
+                    <button id="botonContacto" class="btn btn-info" onclick="displayInfoContacto(); changeAccordion();">
+                        <span>Informacion de Contacto </span>
+                        <span class="glyphicon glyphicon-chevron-down "></span>
+                    </button>
+                    <div id="contacto" style="display: none;"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-xs-6 text-center colInfo">
+                <div id="nombreCompleto"></div>
+                <div><h2>Profesión</h2></div>
+                <ul class="nav nav-pills">
+                    <li class="active"><a class="glyphicon glyphicon-user" data-toggle="pill" href="#perProf"><span>Perfil</span></a></li>
+                    <li><a class="glyphicon glyphicon-education" data-toggle="pill" href="#formProf"> <span>Formacion</span></a></li>
+                    <li><a class="glyphicon glyphicon-briefcase" data-toggle="pill" href="#expLab"> <span>Experiencia</span></a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="formProf" class="tab-pane fade in active">
+                        <ul>
+                            <li><h3>Instituto</h3></li>
+                            <li><h4>Estudios</h4></li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nam culpa tempora rem sunt odio dignissimos velit tenetur ducimus adipisci doloribus recusandae, officiis fugiat cumque, enim eveniet itaque nostrum provident!</li>
+                        </ul>
+                    </div>
+                    <div id="expLab" class="tab-pane fade">
+                        <ul>
+                            <li><h3>Lugar de Trabajo</h3></li>
+                            <li><h4>Puesto</h4></li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nam culpa tempora rem sunt odio dignissimos velit tenetur ducimus adipisci doloribus recusandae, officiis fugiat cumque, enim eveniet itaque nostrum provident!</li>
+                        </ul>
+                    </div>
+                    <div id="perProf" class="tab-pane fade">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nam culpa tempora rem sunt odio dignissimos velit tenetur ducimus adipisci doloribus recusandae, officiis fugiat cumque, enim eveniet itaque nostrum provident!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nam culpa tempora rem sunt odio dignissimos velit tenetur ducimus adipisci doloribus recusandae, officiis fugiat cumque, enim eveniet itaque nostrum provident!
+                    </div>    
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
